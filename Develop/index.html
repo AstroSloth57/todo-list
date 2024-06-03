@@ -33,18 +33,23 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body form-group">
+          <div class="modal-body">
             <div class="form-group">
               <label>Task Title</label>
               <input class="form-control" id="taskInput" placeholder="Enter task here">
             </div>
             <div class="form-group">
               <label>Due Date</label>
+              <input class="form-control" id="taskDueDate" placeholder="Due Date">
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <input class="form-control" id="taskDescription">
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary" id="add-task-btn">Add Task</button>
           </div>
         </div>
       </div>
