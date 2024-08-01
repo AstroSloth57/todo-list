@@ -33,24 +33,26 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+        <form id="add-task-form">
           <div class="modal-body">
             <div class="form-group">
               <label>Task Title</label>
-              <input class="form-control" id="taskInput" placeholder="Enter task here">
+              <input class="form-control" id="task-input" placeholder="Enter task here">
             </div>
             <div class="form-group">
               <label>Due Date</label>
-              <input class="form-control" id="taskDueDate" placeholder="Due Date">
+              <input class="form-control" id="task-due-date" placeholder="Due Date">
             </div>
             <div class="form-group">
               <label>Description</label>
-              <input class="form-control" id="taskDescription">
+              <input class="form-control" id="task-description">
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="add-task-btn">Add Task</button>
+            <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Add Task</button>
           </div>
+        </form>
         </div>
       </div>
     </div>
@@ -75,16 +77,16 @@
             <div id="in-progress-cards"></div>
           </div>
         </div>
+      </div>
+      <div class="col-12 col-lg-4 d-flex">
+        <div id="done" class="card border-light mb-3 lane flex-grow-1">
+          <div class="card-header bg-white">
+            <h2 class="card-title mb-1">Done</h2>
+          </div>
+          <div class="card-body bg-light">
+            <div id="done-cards"></div>
+          </div>
         </div>
-        <div class="col-12 col-lg-4 d-flex">
-          <div id="done" class="card border-light mb-3 lane flex-grow-1">
-            <div class="card-header bg-white">
-              <h2 class="card-title mb-1">Done</h2>
-            </div>
-            <div class="card-body bg-light">
-              <div id="done-cards"></div>
-          </div>
-          </div>
       </div>
     </div>
   </div>
